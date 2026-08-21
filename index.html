@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justin’s Sweepstakes | Lewisville, TX</title>
+<meta name="description" content="Justin’s Sweepstakes — entertainment, promotions and sweepstakes-style games in Lewisville, Texas.">
+<style>
+:root{--gold:#ffd54a;--gold2:#f2a900;--bg:#050505;--card:#111;--muted:#bcbcbc}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(3,3,3,.94);backdrop-filter:blur(12px);border-bottom:1px solid #302b18}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.35rem;font-weight:1000;letter-spacing:.5px}.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:25px;font-size:.92rem;font-weight:800}.navlinks a:hover{color:var(--gold)}
+.hero{position:relative;min-height:720px;display:flex;align-items:center;text-align:center;overflow:hidden;
+background:radial-gradient(circle at 50% 45%,#4b3600 0,#171204 28%,#050505 67%)}
+.hero:before{content:"";position:absolute;inset:-20%;background:repeating-conic-gradient(from 0deg,rgba(255,213,74,.07) 0deg 8deg,transparent 8deg 20deg);animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.coin{position:absolute;border:2px solid rgba(255,213,74,.2);border-radius:50%}.c1{width:520px;height:520px;left:-220px;top:130px}.c2{width:700px;height:700px;right:-330px;top:-150px}.c3{width:300px;height:300px;right:15%;bottom:-180px}
+.hero-content{position:relative;z-index:2;width:100%}
+.badge{display:inline-block;padding:8px 17px;border:1px solid var(--gold);border-radius:999px;color:var(--gold);font-size:.76rem;font-weight:900;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:20px}
+h1{font-size:clamp(3.1rem,8vw,6.8rem);line-height:.9;text-transform:uppercase;text-shadow:0 5px 35px #000;margin-bottom:25px}
+.gold{color:var(--gold)}
+.hero p{max-width:760px;margin:auto;color:#ddd;font-size:1.13rem;line-height:1.7}
+.buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:15px 23px;border-radius:10px;font-weight:950;border:1px solid var(--gold);transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,213,74,.15)}
+.primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#080808}
+.secondary{background:#0c0c0c}
+section{padding:85px 0}
+.section-title{text-align:center;margin-bottom:45px}.eyebrow{color:var(--gold);font-size:.75rem;letter-spacing:2px;font-weight:900;text-transform:uppercase;margin-bottom:8px}
+.section-title h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:8px}.section-title p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{position:relative;background:linear-gradient(145deg,#161616,#0c0c0c);border:1px solid #292929;border-radius:20px;padding:32px;text-align:center;overflow:hidden}
+.card:after{content:"";position:absolute;left:10%;right:10%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.icon{font-size:3rem;margin-bottom:15px}.card h3{font-size:1.25rem;margin-bottom:9px}.card p{color:#aaa}
+.promo-wrap{padding:0 0 85px}.promo{position:relative;overflow:hidden;background:linear-gradient(135deg,#ffe37a,#e2a500 55%,#8c5a00);color:#111;border-radius:26px;padding:55px;text-align:center;box-shadow:0 20px 70px rgba(0,0,0,.35)}
+.promo:before{content:"✦  ✦  ✦  ✦  ✦";position:absolute;inset:20px;color:rgba(255,255,255,.25);font-size:4rem;word-spacing:60px;transform:rotate(-8deg)}
+.promo-content{position:relative;z-index:2}.promo h2{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:12px;text-transform:uppercase}.promo p{max-width:720px;margin:auto;font-size:1.12rem;line-height:1.6}.promo .btn{background:#090909;color:#fff;border-color:#090909}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:22px}.info-box{background:#111;border:1px solid #292929;border-radius:20px;padding:30px}
+.info-box h3{color:var(--gold);margin-bottom:16px;font-size:1.2rem}.address{font-size:1.08rem;color:#ddd;line-height:1.8}
+.hours{display:grid;grid-template-columns:1fr auto;gap:12px;color:#ccc}.hours strong{color:#fff}
+.contact{text-align:center;background:linear-gradient(#0b0b0b,#050505);border-top:1px solid #1e1e1e}
+.social{margin-top:22px;color:#aaa}.social a{color:var(--gold);font-weight:800}
+.disclaimer{margin:28px auto 0;color:#777;font-size:.76rem;max-width:850px;line-height:1.6}
+footer{padding:30px 0;text-align:center;border-top:1px solid #222;color:#777;font-size:.85rem}
+@media(max-width:760px){.navlinks{display:none}.hero{min-height:650px}.cards,.info{grid-template-columns:1fr}section{padding:65px 0}.promo{padding:38px 22px}.hours{font-size:.91rem}.logo{font-size:1.08rem}}
+</style>
+</head>
+<body>
+<nav>
+<div class="container nav">
+<div class="logo">JUSTIN’S <span>SWEEPSTAKES</span></div>
+<div class="navlinks"><a href="#about">About</a><a href="#promos">Promotions</a><a href="#visit">Visit</a><a href="#contact">Contact</a></div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="coin c1"></div><div class="coin c2"></div><div class="coin c3"></div>
+<div class="container hero-content">
+<div class="badge">Lewisville • Texas</div>
+<h1>FEEL THE<br><span class="gold">EXCITEMENT</span></h1>
+<p>Welcome to Justin’s Sweepstakes — your local destination for electronic entertainment, promotions and a fun atmosphere right here in Lewisville.</p>
+<div class="buttons">
+<a class="btn primary" href="#promos">VIEW PROMOTIONS</a>
+<a class="btn secondary" href="tel:2709952210">CALL 270-995-2210</a>
+</div>
+</div>
+</header>
+
+<section id="about">
+<div class="container">
+<div class="section-title"><div class="eyebrow">Why visit us</div><h2>Entertainment. Promotions. Good Times.</h2><p>Drop in and discover what's waiting for you.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🎰</div><h3>Electronic Entertainment</h3><p>Enjoy a variety of electronic entertainment games in a comfortable local setting.</p></div>
+<div class="card"><div class="icon">🎁</div><h3>Promotional Offers</h3><p>Ask our team about current promotions and available promotional opportunities.</p></div>
+<div class="card"><div class="icon">✨</div><h3>Local Experience</h3><p>A welcoming Lewisville destination for customers looking for something fun to do.</p></div>
+</div>
+</div>
+</section>
+
+<section class="promo-wrap" id="promos">
+<div class="container">
+<div class="promo"><div class="promo-content">
+<div class="eyebrow" style="color:#111">JUSTIN’S SWEEPSTAKES</div>
+<h2>Something Exciting Is Waiting</h2>
+<p>Stop by and ask about our current promotions and free-play offers. Promotions and eligibility are subject to applicable terms and rules.</p>
+<div class="buttons"><a class="btn" href="tel:2709952210">CALL US TODAY</a></div>
+</div></div>
+</div>
+</section>
+
+<section id="visit">
+<div class="container">
+<div class="section-title"><div class="eyebrow">Find us</div><h2>Visit Justin’s Sweepstakes</h2><p>Conveniently located on Justin Road in Lewisville.</p></div>
+<div class="info">
+<div class="info-box">
+<h3>📍 Location</h3>
+<p class="address">1297 Justin Rd, Ste 316<br>Lewisville, TX 75077</p>
+<div class="buttons" style="justify-content:flex-start;margin-top:22px"><a class="btn primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=1297+Justin+Rd+Ste+316+Lewisville+TX+75077">GET DIRECTIONS</a></div>
+</div>
+<div class="info-box">
+<h3>🕒 Hours</h3>
+<div class="hours">
+<span>Monday–Thursday</span><strong>10 AM–1 AM</strong>
+<span>Friday–Saturday</span><strong>10 AM–2 AM</strong>
+<span>Sunday</span><strong>12 PM–2 AM</strong>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+<div class="section-title"><div class="eyebrow">Stay connected</div><h2>Questions? We're Here.</h2><p>Call us or follow our Facebook page for updates and promotions.</p></div>
+<div class="buttons">
+<a class="btn primary" href="tel:2709952210">📞 270-995-2210</a>
+<a class="btn secondary" target="_blank" href="https://www.facebook.com/profile.php?id=61593339424206">f Facebook</a>
+</div>
+<p class="social">Follow <a target="_blank" href="https://www.facebook.com/profile.php?id=61593339424206">Justin’s Sweepstakes on Facebook</a></p>
+<p class="disclaimer">Promotions, sweepstakes, games, eligibility and redemption are subject to applicable terms, conditions and local law. Please contact Justin’s Sweepstakes for current details.</p>
+</div>
+</section>
+
+<footer>© 2026 Justin’s Sweepstakes · 1297 Justin Rd, Ste 316 · Lewisville, TX 75077</footer>
+</body>
+</html>
