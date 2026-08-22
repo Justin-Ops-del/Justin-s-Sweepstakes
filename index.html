@@ -15,9 +15,15 @@
 --muted:#bcbcbc
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0
+}
 
-html{scroll-behavior:smooth}
+html{
+scroll-behavior:smooth
+}
 
 body{
 font-family:Arial,Helvetica,sans-serif;
@@ -26,7 +32,10 @@ color:#fff;
 overflow-x:hidden
 }
 
-a{text-decoration:none;color:inherit}
+a{
+text-decoration:none;
+color:inherit
+}
 
 .container{
 width:min(1160px,92%);
@@ -58,7 +67,9 @@ font-weight:1000;
 letter-spacing:.5px
 }
 
-.logo span{color:var(--gold)}
+.logo span{
+color:var(--gold)
+}
 
 .nav-right{
 display:flex;
@@ -73,7 +84,9 @@ font-size:.92rem;
 font-weight:800
 }
 
-.navlinks a:hover{color:var(--gold)}
+.navlinks a:hover{
+color:var(--gold)
+}
 
 .language{
 display:flex;
@@ -136,7 +149,9 @@ animation:spin 28s linear infinite
 }
 
 @keyframes spin{
-to{transform:rotate(360deg)}
+to{
+transform:rotate(360deg)
+}
 }
 
 .hero:after{
@@ -208,7 +223,9 @@ text-shadow:0 5px 35px #000;
 margin-bottom:25px
 }
 
-.gold{color:var(--gold)}
+.gold{
+color:var(--gold)
+}
 
 .hero p{
 max-width:760px;
@@ -256,6 +273,8 @@ padding:85px 0;
 position:relative
 }
 
+/* ABOUT BACKGROUND */
+
 #about{
 background:
 linear-gradient(
@@ -265,7 +284,7 @@ rgba(5,5,5,.94)
 url("https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=2000&q=85");
 
 background-size:cover;
-background-position:center;
+background-position:center
 }
 
 .section-title{
@@ -287,7 +306,9 @@ font-size:clamp(2rem,5vw,3rem);
 margin-bottom:8px
 }
 
-.section-title p{color:var(--muted)}
+.section-title p{
+color:var(--muted)
+}
 
 .cards{
 display:grid;
@@ -335,12 +356,15 @@ font-size:1.25rem;
 margin-bottom:9px
 }
 
-.card p{color:#aaa}
+.card p{
+color:#aaa
+}
 
-/* PROMOTION */
+/* PROMOTIONS */
 
 .promo-wrap{
 padding:0 0 85px;
+
 background:
 linear-gradient(
 rgba(5,5,5,.92),
@@ -349,7 +373,7 @@ rgba(5,5,5,.92)
 url("https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=2000&q=85");
 
 background-size:cover;
-background-position:center;
+background-position:center
 }
 
 .promo{
@@ -413,7 +437,7 @@ rgba(5,5,5,.95)
 url("https://images.unsplash.com/photo-1577741314755-048d8525d31e?auto=format&fit=crop&w=2000&q=85");
 
 background-size:cover;
-background-position:center;
+background-position:center
 }
 
 .info{
@@ -449,12 +473,15 @@ gap:12px;
 color:#ccc
 }
 
-.hours strong{color:#fff}
+.hours strong{
+color:#fff
+}
 
 /* CONTACT */
 
 .contact{
 text-align:center;
+
 background:
 linear-gradient(
 rgba(5,5,5,.94),
@@ -464,6 +491,7 @@ url("https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fi
 
 background-size:cover;
 background-position:center;
+
 border-top:1px solid #1e1e1e
 }
 
@@ -520,10 +548,11 @@ min-height:68px
 
 .hero{
 min-height:650px;
-background-attachment:scroll;
+background-attachment:scroll
 }
 
-.cards,.info{
+.cards,
+.info{
 grid-template-columns:1fr
 }
 
@@ -567,6 +596,8 @@ scroll-behavior:auto
 
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
 
 <div class="container nav">
@@ -579,25 +610,29 @@ JUSTIN’S <span>SWEEPSTAKES</span>
 
 <div class="navlinks">
 
-<a href="#about"
+<a
+href="#about"
 data-en="About"
 data-es="Nosotros">
 About
 </a>
 
-<a href="#promos"
+<a
+href="#promos"
 data-en="Promotions"
 data-es="Promociones">
 Promotions
 </a>
 
-<a href="#visit"
+<a
+href="#visit"
 data-en="Visit"
 data-es="Visítanos">
 Visit
 </a>
 
-<a href="#contact"
+<a
+href="#contact"
 data-en="Contact"
 data-es="Contacto">
 Contact
@@ -627,6 +662,8 @@ onclick="setLanguage('es')">
 </nav>
 
 
+<!-- HERO -->
+
 <header class="hero">
 
 <div class="coin c1"></div>
@@ -635,7 +672,8 @@ onclick="setLanguage('es')">
 
 <div class="container hero-content">
 
-<div class="badge"
+<div
+class="badge"
 data-en="Lewisville • Texas"
 data-es="Lewisville • Texas">
 Lewisville • Texas
@@ -661,10 +699,10 @@ EXCITEMENT
 </h1>
 
 <p
-data-en="Welcome to Justin’s Sweepstakes — your local destination for electronic entertainment, promotions and a fun atmosphere right here in Lewisville."
-data-es="Bienvenido a Justin’s Sweepstakes — tu destino local en Lewisville para entretenimiento electrónico, promociones y un ambiente divertido.">
+data-en="Welcome to Justin’s Sweepstakes — your local destination for electronic entertainment, promotions, big wins and a fun atmosphere right here in Lewisville."
+data-es="Bienvenido a Justin’s Sweepstakes — tu destino local en Lewisville para entretenimiento electrónico, promociones, grandes premios y un ambiente divertido.">
 
-Welcome to Justin’s Sweepstakes — your local destination for electronic entertainment, promotions and a fun atmosphere right here in Lewisville.
+Welcome to Justin’s Sweepstakes — your local destination for electronic entertainment, promotions, big wins and a fun atmosphere right here in Lewisville.
 
 </p>
 
@@ -692,28 +730,35 @@ CALL +1 (945) 395-9905
 </header>
 
 
+<!-- WHY VISIT US -->
+
 <section id="about">
 
 <div class="container">
 
 <div class="section-title">
 
-<div class="eyebrow"
-data-en="Why visit us"
-data-es="Por qué visitarnos">
-Why visit us
+<div
+class="eyebrow"
+data-en="WHY VISIT US"
+data-es="POR QUÉ VISITARNOS">
+WHY VISIT US
 </div>
 
 <h2
-data-en="Entertainment. Promotions. Good Times."
-data-es="Entretenimiento. Promociones. Buenos Momentos.">
-Entertainment. Promotions. Good Times.
+data-en="Entertainment. Promotions. Big Wins. Good Times."
+data-es="Entretenimiento. Promociones. Grandes Premios. Buenos Momentos.">
+
+Entertainment. Promotions. Big Wins. Good Times.
+
 </h2>
 
 <p
 data-en="Drop in and discover what's waiting for you."
 data-es="Ven a visitarnos y descubre lo que tenemos para ti.">
+
 Drop in and discover what's waiting for you.
+
 </p>
 
 </div>
@@ -734,7 +779,9 @@ Electronic Entertainment
 <p
 data-en="Enjoy a variety of electronic entertainment games in a comfortable local setting."
 data-es="Disfruta de una variedad de juegos de entretenimiento electrónico en un ambiente local y cómodo.">
+
 Enjoy a variety of electronic entertainment games in a comfortable local setting.
+
 </p>
 
 </div>
@@ -753,7 +800,9 @@ Promotional Offers
 <p
 data-en="Ask our team about current promotions and available promotional opportunities."
 data-es="Pregunta a nuestro equipo sobre las promociones actuales y las oportunidades promocionales disponibles.">
+
 Ask our team about current promotions and available promotional opportunities.
+
 </p>
 
 </div>
@@ -764,15 +813,17 @@ Ask our team about current promotions and available promotional opportunities.
 <div class="icon">✨</div>
 
 <h3
-data-en="Local Experience"
-data-es="Experiencia Local">
-Local Experience
+data-en="Big Wins"
+data-es="Grandes Premios">
+Big Wins
 </h3>
 
 <p
-data-en="A welcoming Lewisville destination for customers looking for something fun to do."
-data-es="Un destino acogedor en Lewisville para quienes buscan algo divertido que hacer.">
-A welcoming Lewisville destination for customers looking for something fun to do.
+data-en="A welcoming Lewisville destination for customers looking for something fun and exciting to do."
+data-es="Un destino acogedor en Lewisville para quienes buscan algo divertido y emocionante que hacer.">
+
+A welcoming Lewisville destination for customers looking for something fun and exciting to do.
+
 </p>
 
 </div>
@@ -782,7 +833,11 @@ A welcoming Lewisville destination for customers looking for something fun to do
 </section>
 
 
-<section class="promo-wrap" id="promos">
+<!-- PROMOTIONS -->
+
+<section
+class="promo-wrap"
+id="promos">
 
 <div class="container">
 
@@ -790,7 +845,8 @@ A welcoming Lewisville destination for customers looking for something fun to do
 
 <div class="promo-content">
 
-<div class="eyebrow"
+<div
+class="eyebrow"
 style="color:#111"
 data-en="JUSTIN’S SWEEPSTAKES"
 data-es="JUSTIN’S SWEEPSTAKES">
@@ -800,13 +856,17 @@ JUSTIN’S SWEEPSTAKES
 <h2
 data-en="Something Exciting Is Waiting"
 data-es="Algo Emocionante Te Está Esperando">
+
 Something Exciting Is Waiting
+
 </h2>
 
 <p
 data-en="Stop by and ask about our current promotions and free-play offers. Promotions and eligibility are subject to applicable terms and rules."
 data-es="Visítanos y pregunta por nuestras promociones actuales y ofertas de juego gratis. Las promociones y la elegibilidad están sujetas a los términos y reglas aplicables.">
+
 Stop by and ask about our current promotions and free-play offers. Promotions and eligibility are subject to applicable terms and rules.
+
 </p>
 
 <div class="buttons">
@@ -816,7 +876,9 @@ class="btn"
 href="tel:+19453959905"
 data-en="CALL +1 (945) 395-9905"
 data-es="LLAMAR +1 (945) 395-9905">
+
 CALL +1 (945) 395-9905
+
 </a>
 
 </div>
@@ -827,28 +889,35 @@ CALL +1 (945) 395-9905
 </section>
 
 
+<!-- VISIT -->
+
 <section id="visit">
 
 <div class="container">
 
 <div class="section-title">
 
-<div class="eyebrow"
-data-en="Find us"
-data-es="Encuéntranos">
-Find us
+<div
+class="eyebrow"
+data-en="FIND US"
+data-es="ENCUÉNTRANOS">
+FIND US
 </div>
 
 <h2
 data-en="Visit Justin’s Sweepstakes"
 data-es="Visita Justin’s Sweepstakes">
+
 Visit Justin’s Sweepstakes
+
 </h2>
 
 <p
 data-en="Conveniently located on Justin Road in Lewisville."
 data-es="Ubicados convenientemente en Justin Road en Lewisville.">
+
 Conveniently located on Justin Road in Lewisville.
+
 </p>
 
 </div>
@@ -865,11 +934,14 @@ data-es="📍 Ubicación">
 </h3>
 
 <p class="address">
+
 1297 Justin Rd, Ste 316<br>
 Lewisville, TX 75077
+
 </p>
 
-<div class="buttons"
+<div
+class="buttons"
 style="justify-content:flex-start;margin-top:22px">
 
 <a
@@ -878,7 +950,9 @@ target="_blank"
 href="https://www.google.com/maps/search/?api=1&query=1297+Justin+Rd+Ste+316+Lewisville+TX+75077"
 data-en="GET DIRECTIONS"
 data-es="CÓMO LLEGAR">
+
 GET DIRECTIONS
+
 </a>
 
 </div>
@@ -891,7 +965,9 @@ GET DIRECTIONS
 <h3
 data-en="🕒 Hours"
 data-es="🕒 Horario">
+
 🕒 Hours
+
 </h3>
 
 <div class="hours">
@@ -931,28 +1007,37 @@ Sunday
 </section>
 
 
-<section id="contact" class="contact">
+<!-- CONTACT -->
+
+<section
+id="contact"
+class="contact">
 
 <div class="container">
 
 <div class="section-title">
 
-<div class="eyebrow"
-data-en="Stay connected"
-data-es="Mantente conectado">
-Stay connected
+<div
+class="eyebrow"
+data-en="STAY CONNECTED"
+data-es="MANTENTE CONECTADO">
+STAY CONNECTED
 </div>
 
 <h2
 data-en="Questions? We're Here."
 data-es="¿Preguntas? Estamos Aquí.">
+
 Questions? We're Here.
+
 </h2>
 
 <p
 data-en="Call us or follow our Facebook page for updates and promotions."
 data-es="Llámanos o sigue nuestra página de Facebook para recibir actualizaciones y promociones.">
+
 Call us or follow our Facebook page for updates and promotions.
+
 </p>
 
 </div>
@@ -963,14 +1048,18 @@ Call us or follow our Facebook page for updates and promotions.
 <a
 class="btn primary"
 href="tel:+19453959905">
+
 📞 +1 (945) 395-9905
+
 </a>
 
 <a
 class="btn secondary"
 target="_blank"
 href="https://www.facebook.com/profile.php?id=61593339424206">
+
 f Facebook
+
 </a>
 
 </div>
@@ -981,19 +1070,24 @@ f Facebook
 <span
 data-en="Follow "
 data-es="Sigue a ">
+
 Follow
+
 </span>
 
 <a
 target="_blank"
 href="https://www.facebook.com/profile.php?id=61593339424206">
+
 Justin’s Sweepstakes on Facebook
+
 </a>
 
 </p>
 
 
-<p class="disclaimer"
+<p
+class="disclaimer"
 data-en="Promotions, sweepstakes, games, eligibility and redemption are subject to applicable terms, conditions and local law. Please contact Justin’s Sweepstakes for current details."
 data-es="Las promociones, sorteos, juegos, elegibilidad y canjes están sujetos a los términos, condiciones y leyes locales aplicables. Comunícate con Justin’s Sweepstakes para obtener información actualizada.">
 
@@ -1004,6 +1098,8 @@ Promotions, sweepstakes, games, eligibility and redemption are subject to applic
 </div>
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -1018,11 +1114,14 @@ data-es="© 2026 Justin’s Sweepstakes · 1297 Justin Rd, Ste 316 · Lewisville
 </footer>
 
 
+<!-- LANGUAGE SCRIPT -->
+
 <script>
 
 function setLanguage(lang){
 
-const elements = document.querySelectorAll("[data-en]");
+const elements =
+document.querySelectorAll("[data-en]");
 
 elements.forEach(function(element){
 
@@ -1036,19 +1135,24 @@ document.documentElement.lang = lang;
 document
 .getElementById("enBtn")
 .classList
-.toggle("active", lang === "en");
+.toggle("active",lang === "en");
 
 document
 .getElementById("esBtn")
 .classList
-.toggle("active", lang === "es");
+.toggle("active",lang === "es");
 
-localStorage.setItem("preferredLanguage", lang);
+localStorage.setItem(
+"preferredLanguage",
+lang
+);
 
 }
 
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener(
+"DOMContentLoaded",
+function(){
 
 const savedLanguage =
 localStorage.getItem("preferredLanguage") || "en";
