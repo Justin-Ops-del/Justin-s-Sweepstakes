@@ -33,11 +33,13 @@ width:min(1160px,92%);
 margin:auto
 }
 
+/* NAVIGATION */
+
 nav{
 position:sticky;
 top:0;
 z-index:20;
-background:rgba(3,3,3,.94);
+background:rgba(3,3,3,.96);
 backdrop-filter:blur(12px);
 border-bottom:1px solid #302b18
 }
@@ -99,6 +101,8 @@ background:var(--gold);
 color:#080808
 }
 
+/* HERO */
+
 .hero{
 position:relative;
 min-height:720px;
@@ -106,7 +110,17 @@ display:flex;
 align-items:center;
 text-align:center;
 overflow:hidden;
-background:radial-gradient(circle at 50% 45%,#4b3600 0,#171204 28%,#050505 67%)
+
+background:
+linear-gradient(
+rgba(0,0,0,.72),
+rgba(0,0,0,.82)
+),
+url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=2000&q=85");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 }
 
 .hero:before{
@@ -125,10 +139,24 @@ animation:spin 28s linear infinite
 to{transform:rotate(360deg)}
 }
 
+.hero:after{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(
+circle at center,
+rgba(255,193,7,.15),
+transparent 55%
+);
+pointer-events:none
+}
+
 .coin{
 position:absolute;
 border:2px solid rgba(255,213,74,.2);
-border-radius:50%
+border-radius:50%;
+z-index:1
 }
 
 .c1{
@@ -168,7 +196,8 @@ font-size:.76rem;
 font-weight:900;
 letter-spacing:1.8px;
 text-transform:uppercase;
-margin-bottom:20px
+margin-bottom:20px;
+background:rgba(0,0,0,.35)
 }
 
 h1{
@@ -186,7 +215,8 @@ max-width:760px;
 margin:auto;
 color:#ddd;
 font-size:1.13rem;
-line-height:1.7
+line-height:1.7;
+text-shadow:0 2px 8px #000
 }
 
 .buttons{
@@ -219,7 +249,24 @@ color:#080808
 background:#0c0c0c
 }
 
-section{padding:85px 0}
+/* GENERAL SECTIONS */
+
+section{
+padding:85px 0;
+position:relative
+}
+
+#about{
+background:
+linear-gradient(
+rgba(5,5,5,.91),
+rgba(5,5,5,.94)
+),
+url("https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=2000&q=85");
+
+background-size:cover;
+background-position:center;
+}
 
 .section-title{
 text-align:center;
@@ -250,12 +297,17 @@ gap:20px
 
 .card{
 position:relative;
-background:linear-gradient(145deg,#161616,#0c0c0c);
+background:linear-gradient(
+145deg,
+rgba(22,22,22,.94),
+rgba(12,12,12,.94)
+);
 border:1px solid #292929;
 border-radius:20px;
 padding:32px;
 text-align:center;
-overflow:hidden
+overflow:hidden;
+backdrop-filter:blur(5px)
 }
 
 .card:after{
@@ -285,8 +337,19 @@ margin-bottom:9px
 
 .card p{color:#aaa}
 
+/* PROMOTION */
+
 .promo-wrap{
-padding:0 0 85px
+padding:0 0 85px;
+background:
+linear-gradient(
+rgba(5,5,5,.92),
+rgba(5,5,5,.92)
+),
+url("https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=2000&q=85");
+
+background-size:cover;
+background-position:center;
 }
 
 .promo{
@@ -339,6 +402,20 @@ color:#fff;
 border-color:#090909
 }
 
+/* VISIT */
+
+#visit{
+background:
+linear-gradient(
+rgba(5,5,5,.92),
+rgba(5,5,5,.95)
+),
+url("https://images.unsplash.com/photo-1577741314755-048d8525d31e?auto=format&fit=crop&w=2000&q=85");
+
+background-size:cover;
+background-position:center;
+}
+
 .info{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -346,10 +423,11 @@ gap:22px
 }
 
 .info-box{
-background:#111;
+background:rgba(17,17,17,.94);
 border:1px solid #292929;
 border-radius:20px;
-padding:30px
+padding:30px;
+backdrop-filter:blur(5px)
 }
 
 .info-box h3{
@@ -373,9 +451,19 @@ color:#ccc
 
 .hours strong{color:#fff}
 
+/* CONTACT */
+
 .contact{
 text-align:center;
-background:linear-gradient(#0b0b0b,#050505);
+background:
+linear-gradient(
+rgba(5,5,5,.94),
+rgba(5,5,5,.97)
+),
+url("https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=2000&q=85");
+
+background-size:cover;
+background-position:center;
 border-top:1px solid #1e1e1e
 }
 
@@ -402,8 +490,11 @@ padding:30px 0;
 text-align:center;
 border-top:1px solid #222;
 color:#777;
-font-size:.85rem
+font-size:.85rem;
+background:#050505
 }
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -428,7 +519,8 @@ min-height:68px
 }
 
 .hero{
-min-height:650px
+min-height:650px;
+background-attachment:scroll;
 }
 
 .cards,.info{
@@ -456,6 +548,20 @@ padding:7px 8px
 }
 
 }
+
+/* REDUCED MOTION */
+
+@media(prefers-reduced-motion:reduce){
+
+.hero:before{
+animation:none
+}
+
+html{
+scroll-behavior:auto
+}
+
+}
 </style>
 </head>
 
@@ -472,15 +578,48 @@ JUSTIN’S <span>SWEEPSTAKES</span>
 <div class="nav-right">
 
 <div class="navlinks">
-<a href="#about" data-en="About" data-es="Nosotros">About</a>
-<a href="#promos" data-en="Promotions" data-es="Promociones">Promotions</a>
-<a href="#visit" data-en="Visit" data-es="Visítanos">Visit</a>
-<a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+
+<a href="#about"
+data-en="About"
+data-es="Nosotros">
+About
+</a>
+
+<a href="#promos"
+data-en="Promotions"
+data-es="Promociones">
+Promotions
+</a>
+
+<a href="#visit"
+data-en="Visit"
+data-es="Visítanos">
+Visit
+</a>
+
+<a href="#contact"
+data-en="Contact"
+data-es="Contacto">
+Contact
+</a>
+
 </div>
 
 <div class="language">
-<button id="enBtn" class="active" onclick="setLanguage('en')">🇺🇸 EN</button>
-<button id="esBtn" onclick="setLanguage('es')">🇪🇸 ES</button>
+
+<button
+id="enBtn"
+class="active"
+onclick="setLanguage('en')">
+🇺🇸 EN
+</button>
+
+<button
+id="esBtn"
+onclick="setLanguage('es')">
+🇪🇸 ES
+</button>
+
 </div>
 
 </div>
@@ -503,33 +642,47 @@ Lewisville • Texas
 </div>
 
 <h1>
-<span data-en="FEEL THE" data-es="SIENTE LA">FEEL THE</span><br>
-<span class="gold"
+
+<span
+data-en="FEEL THE"
+data-es="SIENTE LA">
+FEEL THE
+</span>
+
+<br>
+
+<span
+class="gold"
 data-en="EXCITEMENT"
 data-es="EMOCIÓN">
 EXCITEMENT
 </span>
+
 </h1>
 
 <p
 data-en="Welcome to Justin’s Sweepstakes — your local destination for electronic entertainment, promotions and a fun atmosphere right here in Lewisville."
 data-es="Bienvenido a Justin’s Sweepstakes — tu destino local en Lewisville para entretenimiento electrónico, promociones y un ambiente divertido.">
+
 Welcome to Justin’s Sweepstakes — your local destination for electronic entertainment, promotions and a fun atmosphere right here in Lewisville.
+
 </p>
 
 <div class="buttons">
 
-<a class="btn primary"
+<a
+class="btn primary"
 href="#promos"
 data-en="VIEW PROMOTIONS"
 data-es="VER PROMOCIONES">
 VIEW PROMOTIONS
 </a>
 
-<a class="btn secondary"
-href="tel:9453959905"
-data-en="CALL9453959905"
-data-es="LLAMAR 9453959905">
+<a
+class="btn secondary"
+href="tel:+19453959905"
+data-en="CALL +1 (945) 395-9905"
+data-es="LLAMAR +1 (945) 395-9905">
 CALL +1 (945) 395-9905
 </a>
 
@@ -658,11 +811,12 @@ Stop by and ask about our current promotions and free-play offers. Promotions an
 
 <div class="buttons">
 
-<a class="btn"
-href="tel:2709952210"
-data-en="CALL US TODAY"
-data-es="LLÁMANOS HOY">
-CALL US TODAY
+<a
+class="btn"
+href="tel:+19453959905"
+data-en="CALL +1 (945) 395-9905"
+data-es="LLAMAR +1 (945) 395-9905">
+CALL +1 (945) 395-9905
 </a>
 
 </div>
@@ -808,7 +962,7 @@ Call us or follow our Facebook page for updates and promotions.
 
 <a
 class="btn primary"
-href="tel:9453959905">
+href="tel:+19453959905">
 📞 +1 (945) 395-9905
 </a>
 
@@ -842,7 +996,9 @@ Justin’s Sweepstakes on Facebook
 <p class="disclaimer"
 data-en="Promotions, sweepstakes, games, eligibility and redemption are subject to applicable terms, conditions and local law. Please contact Justin’s Sweepstakes for current details."
 data-es="Las promociones, sorteos, juegos, elegibilidad y canjes están sujetos a los términos, condiciones y leyes locales aplicables. Comunícate con Justin’s Sweepstakes para obtener información actualizada.">
+
 Promotions, sweepstakes, games, eligibility and redemption are subject to applicable terms, conditions and local law. Please contact Justin’s Sweepstakes for current details.
+
 </p>
 
 </div>
@@ -854,7 +1010,9 @@ Promotions, sweepstakes, games, eligibility and redemption are subject to applic
 <span
 data-en="© 2026 Justin’s Sweepstakes · 1297 Justin Rd, Ste 316 · Lewisville, TX 75077"
 data-es="© 2026 Justin’s Sweepstakes · 1297 Justin Rd, Ste 316 · Lewisville, TX 75077">
+
 © 2026 Justin’s Sweepstakes · 1297 Justin Rd, Ste 316 · Lewisville, TX 75077
+
 </span>
 
 </footer>
@@ -868,15 +1026,22 @@ const elements = document.querySelectorAll("[data-en]");
 
 elements.forEach(function(element){
 
-element.textContent = element.getAttribute("data-" + lang);
+element.textContent =
+element.getAttribute("data-" + lang);
 
 });
 
 document.documentElement.lang = lang;
 
-document.getElementById("enBtn").classList.toggle("active", lang === "en");
+document
+.getElementById("enBtn")
+.classList
+.toggle("active", lang === "en");
 
-document.getElementById("esBtn").classList.toggle("active", lang === "es");
+document
+.getElementById("esBtn")
+.classList
+.toggle("active", lang === "es");
 
 localStorage.setItem("preferredLanguage", lang);
 
@@ -885,7 +1050,8 @@ localStorage.setItem("preferredLanguage", lang);
 
 document.addEventListener("DOMContentLoaded", function(){
 
-const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+const savedLanguage =
+localStorage.getItem("preferredLanguage") || "en";
 
 setLanguage(savedLanguage);
 
