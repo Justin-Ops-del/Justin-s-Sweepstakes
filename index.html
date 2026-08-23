@@ -227,7 +227,7 @@ margin-bottom:25px
 color:var(--gold)
 }
 
-/* BIG WIN TEXT */
+/* BIG WIN */
 
 .big-win-text{
 font-size:clamp(2rem,5vw,4rem);
@@ -281,25 +281,11 @@ color:#080808
 background:#0c0c0c
 }
 
-/* GENERAL SECTIONS */
+/* SECTIONS */
 
 section{
 padding:85px 0;
 position:relative
-}
-
-/* ABOUT */
-
-#about{
-background:
-linear-gradient(
-rgba(5,5,5,.91),
-rgba(5,5,5,.94)
-),
-url("https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=2000&q=85");
-
-background-size:cover;
-background-position:center
 }
 
 .section-title{
@@ -323,6 +309,20 @@ margin-bottom:8px
 
 .section-title p{
 color:var(--muted)
+}
+
+/* ABOUT */
+
+#about{
+background:
+linear-gradient(
+rgba(5,5,5,.91),
+rgba(5,5,5,.94)
+),
+url("https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=2000&q=85");
+
+background-size:cover;
+background-position:center
 }
 
 .cards{
@@ -599,8 +599,6 @@ margin-bottom:20px
 
 }
 
-/* REDUCED MOTION */
-
 @media(prefers-reduced-motion:reduce){
 
 .hero:before{
@@ -631,29 +629,25 @@ JUSTIN’S <span>SWEEPSTAKES</span>
 
 <div class="navlinks">
 
-<a
-href="#about"
+<a href="#about"
 data-en="About"
 data-es="Nosotros">
 About
 </a>
 
-<a
-href="#promos"
+<a href="#promos"
 data-en="Promotions"
 data-es="Promociones">
 Promotions
 </a>
 
-<a
-href="#visit"
+<a href="#visit"
 data-en="Visit"
 data-es="Visítanos">
 Visit
 </a>
 
-<a
-href="#contact"
+<a href="#contact"
 data-en="Contact"
 data-es="Contacto">
 Contact
@@ -663,15 +657,13 @@ Contact
 
 <div class="language">
 
-<button
-id="enBtn"
+<button id="enBtn"
 class="active"
 onclick="setLanguage('en')">
 🇺🇸 EN
 </button>
 
-<button
-id="esBtn"
+<button id="esBtn"
 onclick="setLanguage('es')">
 🇪🇸 ES
 </button>
@@ -693,8 +685,7 @@ onclick="setLanguage('es')">
 
 <div class="container hero-content">
 
-<div
-class="badge"
+<div class="badge"
 data-en="Lewisville • Texas"
 data-es="Lewisville • Texas">
 Lewisville • Texas
@@ -710,8 +701,7 @@ FEEL THE
 
 <br>
 
-<span
-class="gold"
+<span class="gold"
 data-en="EXCITEMENT"
 data-es="EMOCIÓN">
 EXCITEMENT
@@ -719,16 +709,17 @@ EXCITEMENT
 
 </h1>
 
-<!-- BIG WIN MESSAGE -->
 
-<div
-class="big-win-text"
+<!-- WIN UP TO $4,000 -->
+
+<div class="big-win-text"
 data-en="WIN UP TO $4,000"
 data-es="GANA HASTA $4,000">
 
 WIN UP TO $4,000
 
 </div>
+
 
 <p
 data-en="Welcome to Justin’s Sweepstakes — your local destination for electronic entertainment, promotions, big wins and a fun atmosphere right here in Lewisville."
@@ -738,10 +729,10 @@ Welcome to Justin’s Sweepstakes — your local destination for electronic ente
 
 </p>
 
+
 <div class="buttons">
 
-<a
-class="btn primary"
+<a class="btn primary"
 href="#promos"
 data-en="VIEW PROMOTIONS"
 data-es="VER PROMOCIONES">
@@ -750,8 +741,7 @@ VIEW PROMOTIONS
 
 </a>
 
-<a
-class="btn secondary"
+<a class="btn secondary"
 href="tel:+19453959905"
 data-en="CALL +1 (945) 395-9905"
 data-es="LLAMAR +1 (945) 395-9905">
@@ -774,8 +764,7 @@ CALL +1 (945) 395-9905
 
 <div class="section-title">
 
-<div
-class="eyebrow"
+<div class="eyebrow"
 data-en="WHY VISIT US"
 data-es="POR QUÉ VISITARNOS">
 
@@ -879,8 +868,7 @@ A welcoming Lewisville destination for customers looking for something fun and e
 
 <!-- PROMOTIONS -->
 
-<section
-class="promo-wrap"
+<section class="promo-wrap"
 id="promos">
 
 <div class="container">
@@ -889,8 +877,7 @@ id="promos">
 
 <div class="promo-content">
 
-<div
-class="eyebrow"
+<div class="eyebrow"
 style="color:#111"
 data-en="JUSTIN’S SWEEPSTAKES"
 data-es="JUSTIN’S SWEEPSTAKES">
@@ -917,8 +904,7 @@ Stop by and ask about our current promotions and free-play offers. Promotions an
 
 <div class="buttons">
 
-<a
-class="btn"
+<a class="btn"
 href="tel:+19453959905"
 data-en="CALL +1 (945) 395-9905"
 data-es="LLAMAR +1 (945) 395-9905">
@@ -943,8 +929,7 @@ CALL +1 (945) 395-9905
 
 <div class="section-title">
 
-<div
-class="eyebrow"
+<div class="eyebrow"
 data-en="FIND US"
 data-es="ENCUÉNTRANOS">
 
@@ -990,12 +975,10 @@ Lewisville, TX 75077
 
 </p>
 
-<div
-class="buttons"
+<div class="buttons"
 style="justify-content:flex-start;margin-top:22px">
 
-<a
-class="btn primary"
+<a class="btn primary"
 target="_blank"
 href="https://www.google.com/maps/search/?api=1&query=1297+Justin+Rd+Ste+316+Lewisville+TX+75077"
 data-en="GET DIRECTIONS"
@@ -1065,16 +1048,14 @@ Sunday
 
 <!-- CONTACT -->
 
-<section
-id="contact"
+<section id="contact"
 class="contact">
 
 <div class="container">
 
 <div class="section-title">
 
-<div
-class="eyebrow"
+<div class="eyebrow"
 data-en="STAY CONNECTED"
 data-es="MANTENTE CONECTADO">
 
@@ -1103,18 +1084,17 @@ Call us or follow our Facebook page for updates and promotions.
 
 <div class="buttons">
 
-<a
-class="btn primary"
+<a class="btn primary"
 href="tel:+19453959905">
 
 📞 +1 (945) 395-9905
 
 </a>
 
-<a
-class="btn secondary"
+
+<a class="btn secondary"
 target="_blank"
-href="https://www.facebook.com/profile.php?id=61593339424206">
+href="https://www.facebook.com/share/1RrtZ1rUDh/?mibextid=wwXIfr">
 
 f Facebook
 
@@ -1135,7 +1115,7 @@ Follow
 
 <a
 target="_blank"
-href="https://www.facebook.com/profile.php?id=61593339424206">
+href="https://www.facebook.com/share/1RrtZ1rUDh/?mibextid=wwXIfr">
 
 Justin’s Sweepstakes on Facebook
 
@@ -1144,8 +1124,7 @@ Justin’s Sweepstakes on Facebook
 </p>
 
 
-<p
-class="disclaimer"
+<p class="disclaimer"
 data-en="Promotions, sweepstakes, games, eligibility and redemption are subject to applicable terms, conditions and local law. Please contact Justin’s Sweepstakes for current details."
 data-es="Las promociones, sorteos, juegos, elegibilidad y canjes están sujetos a los términos, condiciones y leyes locales aplicables. Comunícate con Justin’s Sweepstakes para obtener información actualizada.">
 
