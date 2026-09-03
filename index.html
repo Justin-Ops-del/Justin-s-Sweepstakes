@@ -3,10 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Justin’s Sweepstakes | Lewisville, TX</title>
+
 <meta name="description" content="Justin’s Sweepstakes — entertainment, promotions and sweepstakes-style games in Lewisville, Texas.">
 
 <style>
+
 :root{
 --gold:#ffd54a;
 --gold2:#f2a900;
@@ -42,7 +45,10 @@ width:min(1160px,92%);
 margin:auto
 }
 
-/* NAVIGATION */
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav{
 position:sticky;
@@ -114,7 +120,115 @@ background:var(--gold);
 color:#080808
 }
 
-/* HERO */
+
+/* =========================
+   LABOR DAY SPECIAL
+========================= */
+
+.labor-day-banner{
+position:relative;
+background:
+linear-gradient(135deg,#111,#1b1b1b);
+border-bottom:2px solid var(--gold);
+overflow:hidden;
+z-index:10;
+}
+
+.labor-day-banner:before{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(
+circle at center,
+rgba(255,213,74,.16),
+transparent 65%
+);
+pointer-events:none
+}
+
+.labor-day-content{
+position:relative;
+z-index:2;
+width:min(1100px,92%);
+margin:auto;
+padding:28px 0 30px;
+text-align:center
+}
+
+.labor-day-label{
+display:inline-block;
+color:var(--gold);
+font-size:.78rem;
+font-weight:1000;
+letter-spacing:2px;
+margin-bottom:7px
+}
+
+.labor-day-content h2{
+font-size:clamp(2rem,5vw,3.4rem);
+line-height:1;
+margin-bottom:8px;
+text-transform:uppercase;
+color:#fff
+}
+
+.labor-day-subtitle{
+color:#ccc;
+font-size:1rem;
+margin-bottom:22px
+}
+
+.spin-times{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+max-width:850px;
+margin:auto
+}
+
+.spin-box{
+background:#090909;
+border:1px solid #3a3a3a;
+border-radius:14px;
+padding:18px 12px;
+box-shadow:0 8px 25px rgba(0,0,0,.3)
+}
+
+.spin-box span{
+display:block;
+color:#aaa;
+font-size:.7rem;
+font-weight:900;
+letter-spacing:1.3px;
+margin-bottom:6px
+}
+
+.spin-box strong{
+display:block;
+color:#fff;
+font-size:1.35rem;
+margin-bottom:4px
+}
+
+.spin-box b{
+display:block;
+color:var(--gold);
+font-size:1.7rem;
+font-weight:1000
+}
+
+.labor-day-note{
+margin-top:18px;
+color:#777;
+font-size:.7rem;
+line-height:1.5
+}
+
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
 position:relative;
@@ -133,7 +247,7 @@ url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fi
 
 background-size:cover;
 background-position:center;
-background-attachment:fixed;
+background-attachment:fixed
 }
 
 .hero:before{
@@ -227,7 +341,10 @@ margin-bottom:25px
 color:var(--gold)
 }
 
-/* BIG WIN */
+
+/* =========================
+   BIG WIN
+========================= */
 
 .big-win-text{
 font-size:clamp(2rem,5vw,4rem);
@@ -281,7 +398,10 @@ color:#080808
 background:#0c0c0c
 }
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+========================= */
 
 section{
 padding:85px 0;
@@ -311,7 +431,10 @@ margin-bottom:8px
 color:var(--muted)
 }
 
-/* ABOUT */
+
+/* =========================
+   ABOUT
+========================= */
 
 #about{
 background:
@@ -375,7 +498,10 @@ margin-bottom:9px
 color:#aaa
 }
 
-/* PROMOTIONS */
+
+/* =========================
+   PROMOTIONS
+========================= */
 
 .promo-wrap{
 padding:0 0 85px;
@@ -441,7 +567,10 @@ color:#fff;
 border-color:#090909
 }
 
-/* VISIT */
+
+/* =========================
+   VISIT
+========================= */
 
 #visit{
 background:
@@ -492,7 +621,10 @@ color:#ccc
 color:#fff
 }
 
-/* CONTACT */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
 text-align:center;
@@ -537,7 +669,10 @@ font-size:.85rem;
 background:#050505
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:900px){
 
@@ -550,6 +685,7 @@ gap:12px
 }
 
 }
+
 
 @media(max-width:760px){
 
@@ -597,7 +733,49 @@ margin-top:-2px;
 margin-bottom:20px
 }
 
+
+/* LABOR DAY MOBILE */
+
+.labor-day-content{
+padding:23px 0 25px
 }
+
+.labor-day-subtitle{
+font-size:.9rem;
+line-height:1.4
+}
+
+.spin-times{
+grid-template-columns:1fr;
+gap:9px;
+max-width:360px
+}
+
+.spin-box{
+padding:13px 10px
+}
+
+.spin-box span{
+display:inline-block;
+margin-right:6px
+}
+
+.spin-box strong,
+.spin-box b{
+display:inline;
+margin:0 4px
+}
+
+.spin-box strong{
+font-size:1.1rem
+}
+
+.spin-box b{
+font-size:1.3rem
+}
+
+}
+
 
 @media(prefers-reduced-motion:reduce){
 
@@ -610,12 +788,17 @@ scroll-behavior:auto
 }
 
 }
+
 </style>
 </head>
 
+
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
@@ -655,6 +838,7 @@ Contact
 
 </div>
 
+
 <div class="language">
 
 <button id="enBtn"
@@ -675,7 +859,113 @@ onclick="setLanguage('es')">
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================
+     LABOR DAY SPECIAL
+========================= -->
+
+<div class="labor-day-banner">
+
+<div class="labor-day-content">
+
+<div class="labor-day-label"
+data-en="🇺🇸 LABOR DAY SPECIAL 🇺🇸"
+data-es="🇺🇸 ESPECIAL DEL DÍA DEL TRABAJO 🇺🇸">
+
+🇺🇸 LABOR DAY SPECIAL 🇺🇸
+
+</div>
+
+
+<h2
+data-en="FREE SPINS!"
+data-es="¡GIROS GRATIS!">
+
+FREE SPINS!
+
+</h2>
+
+
+<p class="labor-day-subtitle"
+data-en="Three special spins. Three chances to receive promotional prizes."
+data-es="Tres giros especiales. Tres oportunidades para recibir premios promocionales.">
+
+Three special spins. Three chances to receive promotional prizes.
+
+</p>
+
+
+<div class="spin-times">
+
+
+<div class="spin-box">
+
+<span
+data-en="FIRST SPIN"
+data-es="PRIMER GIRO">
+
+FIRST SPIN
+
+</span>
+
+<strong>1 PM</strong>
+
+<b>$100</b>
+
+</div>
+
+
+<div class="spin-box">
+
+<span
+data-en="SECOND SPIN"
+data-es="SEGUNDO GIRO">
+
+SECOND SPIN
+
+</span>
+
+<strong>5 PM</strong>
+
+<b>$150</b>
+
+</div>
+
+
+<div class="spin-box">
+
+<span
+data-en="FINAL SPIN"
+data-es="ÚLTIMO GIRO">
+
+FINAL SPIN
+
+</span>
+
+<strong>8 PM</strong>
+
+<b>$250</b>
+
+</div>
+
+
+</div>
+
+
+<p class="labor-day-note"
+data-en="Promotional offer subject to applicable terms, conditions, and eligibility requirements."
+data-es="La oferta promocional está sujeta a los términos, condiciones y requisitos de elegibilidad aplicables.">
+
+Promotional offer subject to applicable terms, conditions, and eligibility requirements.
+
+</p>
+
+</div>
+</div>
+
+
+<!-- =========================
+     HERO
+========================= -->
 
 <header class="hero">
 
@@ -683,20 +973,27 @@ onclick="setLanguage('es')">
 <div class="coin c2"></div>
 <div class="coin c3"></div>
 
+
 <div class="container hero-content">
+
 
 <div class="badge"
 data-en="Lewisville • Texas"
 data-es="Lewisville • Texas">
+
 Lewisville • Texas
+
 </div>
+
 
 <h1>
 
 <span
 data-en="FEEL THE"
 data-es="SIENTE LA">
+
 FEEL THE
+
 </span>
 
 <br>
@@ -704,13 +1001,13 @@ FEEL THE
 <span class="gold"
 data-en="EXCITEMENT"
 data-es="EMOCIÓN">
+
 EXCITEMENT
+
 </span>
 
 </h1>
 
-
-<!-- WIN UP TO $4,000 -->
 
 <div class="big-win-text"
 data-en="WIN UP TO $4,000"
@@ -741,6 +1038,7 @@ VIEW PROMOTIONS
 
 </a>
 
+
 <a class="btn secondary"
 href="tel:+19453959905"
 data-en="CALL +1 (945) 395-9905"
@@ -753,10 +1051,13 @@ CALL +1 (945) 395-9905
 </div>
 
 </div>
+
 </header>
 
 
-<!-- WHY VISIT US -->
+<!-- =========================
+     WHY VISIT US
+========================= -->
 
 <section id="about">
 
@@ -772,6 +1073,7 @@ WHY VISIT US
 
 </div>
 
+
 <h2
 data-en="Entertainment. Promotions. Big Wins. Good Times."
 data-es="Entretenimiento. Promociones. Grandes Premios. Buenos Momentos.">
@@ -779,6 +1081,7 @@ data-es="Entretenimiento. Promociones. Grandes Premios. Buenos Momentos.">
 Entertainment. Promotions. Big Wins. Good Times.
 
 </h2>
+
 
 <p
 data-en="Drop in and discover what's waiting for you."
@@ -793,6 +1096,7 @@ Drop in and discover what's waiting for you.
 
 <div class="cards">
 
+
 <div class="card">
 
 <div class="icon">🎰</div>
@@ -804,6 +1108,7 @@ data-es="Entretenimiento Electrónico">
 Electronic Entertainment
 
 </h3>
+
 
 <p
 data-en="Enjoy a variety of electronic entertainment games in a comfortable local setting."
@@ -828,6 +1133,7 @@ Promotional Offers
 
 </h3>
 
+
 <p
 data-en="Ask our team about current promotions and available promotional opportunities."
 data-es="Pregunta a nuestro equipo sobre las promociones actuales y las oportunidades promocionales disponibles.">
@@ -851,6 +1157,7 @@ Big Wins
 
 </h3>
 
+
 <p
 data-en="A welcoming Lewisville destination for customers looking for something fun and exciting to do."
 data-es="Un destino acogedor en Lewisville para quienes buscan algo divertido y emocionante que hacer.">
@@ -861,12 +1168,15 @@ A welcoming Lewisville destination for customers looking for something fun and e
 
 </div>
 
+
 </div>
 </div>
 </section>
 
 
-<!-- PROMOTIONS -->
+<!-- =========================
+     PROMOTIONS
+========================= -->
 
 <section class="promo-wrap"
 id="promos">
@@ -877,6 +1187,7 @@ id="promos">
 
 <div class="promo-content">
 
+
 <div class="eyebrow"
 style="color:#111"
 data-en="JUSTIN’S SWEEPSTAKES"
@@ -886,6 +1197,7 @@ JUSTIN’S SWEEPSTAKES
 
 </div>
 
+
 <h2
 data-en="Something Exciting Is Waiting"
 data-es="Algo Emocionante Te Está Esperando">
@@ -894,6 +1206,7 @@ Something Exciting Is Waiting
 
 </h2>
 
+
 <p
 data-en="Stop by and ask about our current promotions and free-play offers. Promotions and eligibility are subject to applicable terms and rules."
 data-es="Visítanos y pregunta por nuestras promociones actuales y ofertas de juego gratis. Las promociones y la elegibilidad están sujetas a los términos y reglas aplicables.">
@@ -901,6 +1214,7 @@ data-es="Visítanos y pregunta por nuestras promociones actuales y ofertas de ju
 Stop by and ask about our current promotions and free-play offers. Promotions and eligibility are subject to applicable terms and rules.
 
 </p>
+
 
 <div class="buttons">
 
@@ -921,7 +1235,9 @@ CALL +1 (945) 395-9905
 </section>
 
 
-<!-- VISIT -->
+<!-- =========================
+     VISIT
+========================= -->
 
 <section id="visit">
 
@@ -937,6 +1253,7 @@ FIND US
 
 </div>
 
+
 <h2
 data-en="Visit Justin’s Sweepstakes"
 data-es="Visita Justin’s Sweepstakes">
@@ -944,6 +1261,7 @@ data-es="Visita Justin’s Sweepstakes">
 Visit Justin’s Sweepstakes
 
 </h2>
+
 
 <p
 data-en="Conveniently located on Justin Road in Lewisville."
@@ -958,6 +1276,7 @@ Conveniently located on Justin Road in Lewisville.
 
 <div class="info">
 
+
 <div class="info-box">
 
 <h3
@@ -968,12 +1287,14 @@ data-es="📍 Ubicación">
 
 </h3>
 
+
 <p class="address">
 
 1297 Justin Rd, Ste 316<br>
 Lewisville, TX 75077
 
 </p>
+
 
 <div class="buttons"
 style="justify-content:flex-start;margin-top:22px">
@@ -1002,6 +1323,7 @@ data-es="🕒 Horario">
 🕒 Hours
 
 </h3>
+
 
 <div class="hours">
 
@@ -1046,12 +1368,15 @@ Sunday
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact"
 class="contact">
 
 <div class="container">
+
 
 <div class="section-title">
 
@@ -1063,6 +1388,7 @@ STAY CONNECTED
 
 </div>
 
+
 <h2
 data-en="Questions? We're Here."
 data-es="¿Preguntas? Estamos Aquí.">
@@ -1070,6 +1396,7 @@ data-es="¿Preguntas? Estamos Aquí.">
 Questions? We're Here.
 
 </h2>
+
 
 <p
 data-en="Call us or follow our Facebook page for updates and promotions."
@@ -1113,6 +1440,7 @@ Follow
 
 </span>
 
+
 <a
 target="_blank"
 href="https://www.facebook.com/share/1RrtZ1rUDh/?mibextid=wwXIfr">
@@ -1136,7 +1464,9 @@ Promotions, sweepstakes, games, eligibility and redemption are subject to applic
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1151,7 +1481,9 @@ data-es="© 2026 Justin’s Sweepstakes · 1297 Justin Rd, Ste 316 · Lewisville
 </footer>
 
 
-<!-- LANGUAGE SCRIPT -->
+<!-- =========================
+     LANGUAGE SCRIPT
+========================= -->
 
 <script>
 
@@ -1160,6 +1492,7 @@ function setLanguage(lang){
 const elements =
 document.querySelectorAll("[data-en]");
 
+
 elements.forEach(function(element){
 
 element.textContent =
@@ -1167,17 +1500,21 @@ element.getAttribute("data-" + lang);
 
 });
 
+
 document.documentElement.lang = lang;
+
 
 document
 .getElementById("enBtn")
 .classList
 .toggle("active",lang === "en");
 
+
 document
 .getElementById("esBtn")
 .classList
 .toggle("active",lang === "es");
+
 
 localStorage.setItem(
 "preferredLanguage",
@@ -1199,6 +1536,7 @@ setLanguage(savedLanguage);
 });
 
 </script>
+
 
 </body>
 </html>
